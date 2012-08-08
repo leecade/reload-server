@@ -1,0 +1,18 @@
+{
+  "name": "reload-server",
+  "description": "a reload server for seajs",
+  "version": "0.0.1",
+  "author": "Hsiaoming Yang <lepture@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seajs/reload-server.git"
+  },
+  "dependencies": {
+    "socket.io": ">=0.9.9",
+    "watch-tree": ">=0.1.1"
+  },
+  "bin": {"reload-server": "./bin/reload-server.js"},
+  "engines": {
+    "node": "*"
+  }
+}
