@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "socket.io": ">=0.9.9",
-    "watch-tree": ">=0.1.1"
+    "watch-tree-maintained": ">=0.1.2"
   },
+  "main": "./index.js",
   "bin": {"reload-server": "./bin/reload-server.js"},
   "engines": {
     "node": "*"
