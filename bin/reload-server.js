@@ -2,6 +2,22 @@
 
 var server = require('../')
 
+function helpMessage() {
+  var lines = [
+    'Usage:',
+    '  reload-server [-p 8000] [path]',
+    '',
+    'Options:',
+    '  -p, --port=<port>    listen on port',
+    '  -h, --help           display this message',
+    '',
+    'Examples:',
+    '  $ reload-server',
+    '  $ reload-server lib -p 8080'
+  ]
+  console.log(lines.join('\n'))
+}
+
 function main(argv) {
   var path = '.', port = 8000
 
@@ -24,8 +40,8 @@ function main(argv) {
         break
       case '-h':
       case '--help':
-        //TODO
-        process.exit(0);
+        helpMessage()
+        process.exit(0)
         break
       default:
         path = arg
