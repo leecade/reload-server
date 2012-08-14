@@ -1,25 +1,12 @@
 #!/usr/bin/env node
 
-var server = require('../')
+main(process.argv.slice())
 
-function helpMessage() {
-  var lines = [
-    'Usage:',
-    '  reload-server [-p 8000] [path]',
-    '',
-    'Options:',
-    '  -p, --port=<port>    listen on port',
-    '  -h, --help           display this message',
-    '',
-    'Examples:',
-    '  $ reload-server',
-    '  $ reload-server lib -p 8080'
-  ]
-  console.log(lines.join('\n'))
-}
 
 function main(argv) {
-  var path = '.', port = 8000
+  var server = require('../')
+  var path = '.'
+  var port = 8000
 
   function getArg() {
     var args = argv.shift()
@@ -54,7 +41,22 @@ function main(argv) {
   }
 
   port = parseInt(port, 10)
-  server.watch(path, port)
+  server.start(path, port)
 }
 
-main(process.argv.slice())
+
+function helpMessage() {
+  var lines = [
+    'Usage:',
+    '  reload-server [-p 8000] [path]',
+    '',
+    'Options:',
+    '  -p, --port=<port>    listen on port',
+    '  -h, --help           display this message',
+    '',
+    'Examples:',
+    '  $ reload-server',
+    '  $ reload-server lib -p 8080'
+  ]
+  console.log(lines.join('\n'))
+}
