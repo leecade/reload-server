@@ -4,6 +4,10 @@ A server that watches file changing. It is designed for seajs reload plugin.
 
 ## Install
 
+Install with npm:
+
+    $ npm install reload-server -g
+
 
 ## Usage
 
