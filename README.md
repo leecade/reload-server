@@ -1,12 +1,12 @@
 # Reload Server
 
-A server that watches file changing. It is designed for seajs reload plugin.
+A server that watches file changes. It is designed for seajs reload plugin.
 
 ## Install
 
 Install with npm:
 
-    $ npm install reload-server -g
+    $ sudo npm install reload-server -g
 
 
 ## Usage
@@ -33,7 +33,7 @@ At a glance:
     $ reload-server lib -p 8080
 
 
-## Working with seajs
+## Working with SeaJS
 
 This server is designed for seajs reload plugin, but you can write your
 own server.
@@ -47,6 +47,6 @@ To active seajs reload plugin:
     2. http://seajs.org/doc/?seajs-reload=8080
     3. http://seajs.org/doc/?seajs-reload=192.168.2.1:8080
 
-    also working with seajs debug plugin:
+    Also working with seajs debug plugin:
 
     http://seajs.org/doc/?seajs-debug&seajs-reload
