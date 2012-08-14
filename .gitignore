@@ -12,3 +12,4 @@ Thumbs.db
 .svn/
 *.swp
 .nojekyll
+node_modules/
