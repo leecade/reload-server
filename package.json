@@ -1,7 +1,7 @@
 {
   "name": "reload-server",
   "description": "A Reload Server for SeaJS",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Hsiaoming Yang <lepture@me.com>",
   "repository": {
     "type": "git",
