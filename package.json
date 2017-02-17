@@ -8,7 +8,7 @@
     "url": "git://github.com/seajs/reload-server.git"
   },
   "dependencies": {
-    "socket.io": ">=0.9.9",
+    "socket.io": ">=1.7.3",
     "watch-tree-maintained": ">=0.1.2"
   },
   "main": "./index.js",
